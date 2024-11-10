@@ -231,6 +231,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TestTilemap1_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e213679937df00f4d9fe36129a8cef31
+      internalID: 1777306469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestTilemap1_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4846b5b1691d3e449bfa14e0684d50bf
+      internalID: -20914655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -251,6 +295,8 @@ TextureImporter:
       TestTilemap1_3: 32437221
       TestTilemap1_4: 349782600
       TestTilemap1_5: -2096116622
+      TestTilemap1_6: 1777306469
+      TestTilemap1_7: -20914655
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

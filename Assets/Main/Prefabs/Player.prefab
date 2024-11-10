@@ -142,7 +142,7 @@ MonoBehaviour:
   _acceleration: 50
   _deceleration: 60
   _jumpSpeed: 15
-  _jumpBufferSize: 0.007
+  _jumpBufferSize: 0.05
   _groundBufferSize: 0.15
 --- !u!114 &2300425067206214319
 MonoBehaviour:
