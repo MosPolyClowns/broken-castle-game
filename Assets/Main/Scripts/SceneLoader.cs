@@ -7,12 +7,12 @@ public class SceneLoader : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene(1);
     }
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene("GameMenu");
+        SceneManager.LoadScene("Menu");
     }
 
     public void Quit()
