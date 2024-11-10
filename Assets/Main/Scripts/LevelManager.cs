@@ -13,7 +13,7 @@ public static class LevelManager
     {
         int index = SceneManager.GetActiveScene().buildIndex + 1;
 
-        if (index > SceneManager.sceneCount) index = 0;
+        if (index >= SceneManager.sceneCountInBuildSettings) index = 0;
 
         SceneManager.LoadScene(index);
     }
