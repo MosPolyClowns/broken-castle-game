@@ -6,6 +6,7 @@ public class ActiveGrid : MonoBehaviour
     [Header("Components")]
     [SerializeField] private Tilemap _tilemap;
     [SerializeField] private Collider2D _collider2D;
+    [SerializeField] private ParticleSystem _particleSystem;
 
     [Header("Fake")]
     [SerializeField] private TileBase _defaultTileBase;
@@ -22,6 +23,7 @@ public class ActiveGrid : MonoBehaviour
     {
         _tilemap.SwapTile(_defaultTileBase, _fakeTileBase);
         _collider2D.enabled = false;
+        _particleSystem.Play();
     }
 
     private void Update()
