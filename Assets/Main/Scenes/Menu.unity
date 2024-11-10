@@ -151,10 +151,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 569719054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -279, y: -212}
-  m_SizeDelta: {x: 1028.63, y: 145.13}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 300}
+  m_SizeDelta: {x: -520, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &45442183
 MonoBehaviour:
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Broken Castle
+  m_text: BROKEN CASTLE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c7753aada2c558045bea148dbf65620d, type: 2}
   m_sharedMaterial: {fileID: 1995951555714867774, guid: c7753aada2c558045bea148dbf65620d, type: 2}
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -615.8448, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.00067138666, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -383,8 +383,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -476,8 +476,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -382}
-  m_SizeDelta: {x: 366.75, y: 115.98}
+  m_AnchoredPosition: {x: 0, y: -300}
+  m_SizeDelta: {x: 600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128476493
 MonoBehaviour:
@@ -501,8 +501,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -519,7 +519,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1128476494}
+  m_TargetGraphic: {fileID: 490146605}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -657,8 +657,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -798,8 +798,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -958,17 +958,29 @@ PrefabInstance:
       propertyPath: m_ReferenceResolution.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 3003690057383760611, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4056447639804990417, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1323607753}
     - target: {fileID: 4056447639804990417, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
       propertyPath: m_PlaneDistance
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4056447639804990417, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549948815549030713, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826657984484012196, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -977,16 +989,16 @@ PrefabInstance:
       insertIndex: 0
       addedObject: {fileID: 1546736982}
     - targetCorrespondingSourceObject: {fileID: 1548336569056246618, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      insertIndex: 2
+      insertIndex: -1
       addedObject: {fileID: 45442182}
     - targetCorrespondingSourceObject: {fileID: 1548336569056246618, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 1911939082}
     - targetCorrespondingSourceObject: {fileID: 1548336569056246618, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      insertIndex: 4
+      insertIndex: -1
       addedObject: {fileID: 2100642865}
     - targetCorrespondingSourceObject: {fileID: 1548336569056246618, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      insertIndex: 5
+      insertIndex: -1
       addedObject: {fileID: 1128476492}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
@@ -1006,8 +1018,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 0
 --- !u!224 &1546736982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1016,7 +1028,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546736981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1101,8 +1113,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -58.445}
-  m_SizeDelta: {x: 539.98, y: 116.89}
+  m_AnchoredPosition: {x: 0, y: -60}
+  m_SizeDelta: {x: 600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1911939083
 MonoBehaviour:
@@ -1126,8 +1138,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1144,7 +1156,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1911939084}
+  m_TargetGraphic: {fileID: 1219926625}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1291,8 +1303,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0050049, y: -216}
-  m_SizeDelta: {x: 733.51, y: 141.44}
+  m_AnchoredPosition: {x: 0.0050049, y: -180}
+  m_SizeDelta: {x: 600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2100642866
 MonoBehaviour:
@@ -1316,8 +1328,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1334,7 +1346,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2100642867}
+  m_TargetGraphic: {fileID: 1385722932}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []

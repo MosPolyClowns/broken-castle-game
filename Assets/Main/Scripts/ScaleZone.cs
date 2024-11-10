@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class ScaleZone : MonoBehaviour
 {
-    [SerializeField] private float _scaleFactor;
+    [SerializeField] private Vector2 _scaleFactorRLeft = new Vector2(1, 1);
+    [SerializeField] private Vector2 _scaleFactorRight = new Vector2(2, 2);
 
     private float _width;
 
@@ -16,9 +17,14 @@ public class ScaleZone : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
-            float scaleModifier = Mathf.Lerp(1, _scaleFactor, (collider.transform.position.x - (transform.position.x - _width / 2)) / (_width * 2));
+            float progress = (collider.transform.position.x - (transform.position.x - _width / 2)) / (_width * 2);
+            
+            Vector2 scaleModifier = new Vector2(
+                Mathf.Lerp(_scaleFactorRLeft.x, _scaleFactorRight.x, progress),
+                Mathf.Lerp(_scaleFactorRLeft.y, _scaleFactorRight.y, progress)
+            );
 
-            collider.transform.localScale = new Vector3(scaleModifier, scaleModifier, 1);
+            collider.transform.localScale = new Vector3(scaleModifier.x, scaleModifier.y, 1);
         }
     }
     private void OnTriggerExit2D(Collider2D collider)
