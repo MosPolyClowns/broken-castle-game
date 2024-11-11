@@ -8,10 +8,19 @@ public class ScaleZone : MonoBehaviour
     [SerializeField] private float _pitchFactorRight = 1;
 
     private float _width;
+    private float _defaultEdgeRadius;
 
     void Start()
     {
         _width = transform.GetComponent<BoxCollider2D>().size[0];
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Player")
+        {
+            _defaultEdgeRadius = ((BoxCollider2D)collider).edgeRadius;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collider)
@@ -29,6 +38,8 @@ public class ScaleZone : MonoBehaviour
 
             collider.transform.localScale = new Vector3(scaleModifier.x, scaleModifier.y, 1);
             AudioManager.Instance.SetSFXPitch(pitchModifier);
+
+            ((BoxCollider2D)collider).edgeRadius = _defaultEdgeRadius * scaleModifier.y;
         }
     }
     private void OnTriggerExit2D(Collider2D collider)
