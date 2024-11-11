@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("State")]
     public bool alive = true;
+    public bool stoped = false;
 
     [Header("Movement")]
     [SerializeField] private float _speed = 4;
@@ -36,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (stoped == true)
+        {
+            return;
+        }
+
         if (alive == false)
         {
             _rigidbody2D.linearVelocityX = 0;

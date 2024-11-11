@@ -16,6 +16,8 @@ public class EndTrigger : MonoBehaviour
         if (collider.tag == "Player")
         {
             _audioManager?.PlaySFX(_audioManager.winAudio);
+            
+            collider.GetComponent<PlayerMovement>().stoped = true;
 
             _levelManager.LoadNext();
         }
