@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputHandler: {fileID: 1140495861070442496}
-  _rigidBody2D: {fileID: 1711764182628899103}
+  _rigidbody2D: {fileID: 1711764182628899103}
   alive: 1
   _speed: 6
   _acceleration: 50
