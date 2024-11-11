@@ -36,7 +36,11 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (alive == false) return;
+        if (alive == false)
+        {
+            _rigidbody2D.linearVelocityX = 0;
+            return;
+        }
 
         // Horizontal speed
         if (Mathf.Abs(_inputHandler.MovementInput) > 0)

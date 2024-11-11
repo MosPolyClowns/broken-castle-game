@@ -3,6 +3,8 @@ using UnityEngine;
 [DefaultExecutionOrder(-1)]
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager Instance = null;
+
     [Header("Components")]
     [SerializeField] private AudioSource _SFXAudioSource;
     [SerializeField] private AudioSource _BGMAudioSource;
@@ -13,11 +15,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip runAudio;
     public AudioClip deathAudio;
     public AudioClip winAudio;
+    public AudioClip explosionAudio;
 
     [Header("Backgroundd Music")]
     public AudioClip backgroundMusic;
-
-    public static AudioManager Instance = null;
 
     private float _gapTimeout = 0.3f;
 
@@ -32,6 +33,21 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        if (_BGMAudioSource.isPlaying == false)
+        {
+            _BGMAudioSource.clip = backgroundMusic;
+            _BGMAudioSource.Play();
+        }
+    }
+
+    private void Update()
+    {
+        _gapTimeout -= Time.deltaTime;
+        if (_gapTimeout < 0) _gapTimeout = 0;
     }
 
     public void PlaySFX(AudioClip _audioClip)
@@ -50,13 +66,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        _gapTimeout -= Time.deltaTime;
-        if (_gapTimeout < 0) _gapTimeout = 0;
-    }
-
-    private void SetSFXPitch(float pitch)
+    public void SetSFXPitch(float pitch)
     {
         _SFXAudioSource.pitch = pitch;
     }

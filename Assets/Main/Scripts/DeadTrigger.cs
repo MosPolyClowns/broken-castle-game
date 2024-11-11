@@ -3,10 +3,12 @@ using UnityEngine;
 public class DeadTrigger : MonoBehaviour
 {
     private AudioManager _audioManager;
+    private LevelManager _levelManager;
 
     void Start()
     {
         _audioManager = AudioManager.Instance;
+        _levelManager = LevelManager.Instance;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -17,7 +19,7 @@ public class DeadTrigger : MonoBehaviour
 
             collider.gameObject.GetComponent<PlayerMovement>().alive = false;
 
-            LevelManager.Restart();
+            _levelManager.Restart();
         }
     }
 }

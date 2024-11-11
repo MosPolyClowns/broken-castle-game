@@ -45,7 +45,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 4f326dbb393107f479af09a32bd399ce, type: 3}
   m_Resource: {fileID: 8300000, guid: 4f326dbb393107f479af09a32bd399ce, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -182,7 +182,8 @@ MonoBehaviour:
   runAudio: {fileID: 8300000, guid: aecd6cc6074f2bf4b8e64279fdb8f818, type: 3}
   deathAudio: {fileID: 8300000, guid: 0f4babf0262590342a86a5af4f90b6b1, type: 3}
   winAudio: {fileID: 8300000, guid: 0331452dce28afc439d146be25f462ea, type: 3}
-  backgroundMusic: {fileID: 0}
+  explosionAudio: {fileID: 8300000, guid: 2ded8de120646544ea83f9630e6faee9, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: 936326f31b008824394c8e06d1fd264c, type: 3}
 --- !u!1 &7122634345469859311
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +229,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

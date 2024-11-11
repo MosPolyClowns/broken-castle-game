@@ -4,6 +4,8 @@ public class ScaleZone : MonoBehaviour
 {
     [SerializeField] private Vector2 _scaleFactorRLeft = new Vector2(1, 1);
     [SerializeField] private Vector2 _scaleFactorRight = new Vector2(2, 2);
+    [SerializeField] private float _pitchFactorLeft = 1;
+    [SerializeField] private float _pitchFactorRight = 1;
 
     private float _width;
 
@@ -23,7 +25,10 @@ public class ScaleZone : MonoBehaviour
                 Mathf.Lerp(_scaleFactorRLeft.y, _scaleFactorRight.y, progress)
             );
 
+            float pitchModifier = Mathf.Lerp(_pitchFactorLeft, _pitchFactorRight, progress);
+
             collider.transform.localScale = new Vector3(scaleModifier.x, scaleModifier.y, 1);
+            AudioManager.Instance.SetSFXPitch(pitchModifier);
         }
     }
     private void OnTriggerExit2D(Collider2D collider)
@@ -31,6 +36,7 @@ public class ScaleZone : MonoBehaviour
         if (collider.tag == "Player")
         {
             collider.transform.localScale = Vector3.one;
+            AudioManager.Instance.SetSFXPitch(1);
         }
     }
 }

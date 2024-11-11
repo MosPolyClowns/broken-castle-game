@@ -3,10 +3,12 @@ using UnityEngine;
 public class EndTrigger : MonoBehaviour
 {
     private AudioManager _audioManager;
+    private LevelManager _levelManager;
 
     void Start()
     {
         _audioManager = AudioManager.Instance;
+        _levelManager = LevelManager.Instance;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -15,7 +17,7 @@ public class EndTrigger : MonoBehaviour
         {
             _audioManager?.PlaySFX(_audioManager.winAudio);
 
-            LevelManager.Next();
+            _levelManager.LoadNext();
         }
     }
 }

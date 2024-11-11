@@ -2875,47 +2875,11 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: 4564948068246029091, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4564948068246029091, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4564948068246029091, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4564948068246029091, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 425547886346730154, guid: 77538958017d5ce48bbd50cb65ecce71, type: 3}
-    - target: {fileID: 4564948068246029091, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4564948068246029091, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BackToMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 4564948068246029091, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneLoader, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4564948068246029091, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4564948068246029091, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1548336569056246618, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
-      insertIndex: -1
+      insertIndex: 3
       addedObject: {fileID: 8890298551048955655}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0dce279302c0c142b328e6759c3bc6c, type: 3}
@@ -4035,6 +3999,63 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 4888356429207744630, guid: 876de54ba6f8e57429f3504d34ac3443, type: 3}
   m_PrefabInstance: {fileID: 1919439450}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1951674502
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4059536706997027935, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245957583727188172, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1b71753d9f769c44bac5ed18213c519, type: 3}
 --- !u!1 &2035833508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8908078009366847392, guid: 9f6cf4b0743a8cc44a427ef4d2c06f0f, type: 3}
@@ -4314,14 +4335,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7998553398663204945, guid: 54d492f70f4c463428179f401fbbad5d, type: 3}
-      propertyPath: m_Volume
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690900666021933005, guid: 54d492f70f4c463428179f401fbbad5d, type: 3}
-      propertyPath: m_Volume
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4376,6 +4389,7 @@ SceneRoots:
   - {fileID: 6403964428436014146}
   - {fileID: 850982367}
   - {fileID: 8319306525762828477}
+  - {fileID: 1951674502}
   - {fileID: 831596195}
   - {fileID: 1117143106}
   - {fileID: 2905329506170400563}

@@ -18,9 +18,20 @@ public class ActiveGrid : MonoBehaviour
     [Header("Move")]
     [SerializeField] private Vector2 _targetVelocity;
 
-    private bool _activated = false;
+    private AudioManager _audioManager;
 
+    private bool _activated = false;
     private Vector3 velocity = Vector3.zero;
+
+    void Start()
+    {
+        _audioManager = AudioManager.Instance;
+    }
+
+    private void Update()
+    {
+        transform.position += velocity * Time.deltaTime;
+    }
 
     public void Activate()
     {
@@ -46,16 +57,12 @@ public class ActiveGrid : MonoBehaviour
         _tilemap.SwapTile(_defaultTileBase, _fakeTileBase);
         _collider2D.enabled = false;
         _particleSystem.Play();
+        _audioManager.PlaySFX(_audioManager.explosionAudio);
     }
 
     private void Move()
     {
         velocity = new Vector3(_targetVelocity.x, _targetVelocity.y, 0);
         _particleSystem.Play();
-    }
-
-    private void Update()
-    {
-        transform.position += velocity * Time.deltaTime;
     }
 }
