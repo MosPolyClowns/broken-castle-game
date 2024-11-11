@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip landAudio;
     public AudioClip runAudio;
     public AudioClip deathAudio;
+    public AudioClip winAudio;
 
     [Header("Backgroundd Music")]
     public AudioClip backgroundMusic;
@@ -53,6 +54,11 @@ public class AudioManager : MonoBehaviour
     {
         _gapTimeout -= Time.deltaTime;
         if (_gapTimeout < 0) _gapTimeout = 0;
+    }
+
+    private void SetSFXPitch(float pitch)
+    {
+        _SFXAudioSource.pitch = pitch;
     }
 }
 

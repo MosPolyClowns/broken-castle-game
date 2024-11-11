@@ -181,6 +181,7 @@ MonoBehaviour:
   landAudio: {fileID: 8300000, guid: 3f0324e9487e0fb43839706c8419d922, type: 3}
   runAudio: {fileID: 8300000, guid: aecd6cc6074f2bf4b8e64279fdb8f818, type: 3}
   deathAudio: {fileID: 8300000, guid: 0f4babf0262590342a86a5af4f90b6b1, type: 3}
+  winAudio: {fileID: 8300000, guid: 0331452dce28afc439d146be25f462ea, type: 3}
   backgroundMusic: {fileID: 0}
 --- !u!1 &7122634345469859311
 GameObject:
